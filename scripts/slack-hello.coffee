@@ -18,3 +18,6 @@
   robot.hear /おやすみ/i, (msg) ->
     username = msg.message.user.name
     msg.send "おやすみ " + username
+
+  robot.hear /進捗ダメです/i, (msg) ->
+    msg.send "がんばって " + username
