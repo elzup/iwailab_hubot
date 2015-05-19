@@ -12,7 +12,7 @@ module.exports = (hubot) ->
   new cronJob
     cronTime: '00 30 22 * * *'
     onTick: ->
-      hubot.send { room: "general" }, "警備で〜す残留者の確認に来ましたー:cps::cps:"
+      hubot.send { room: "general" }, "警備で〜す残留者の確認に来ましたー:cps:"
       return
     start: true
     timeZone: "Asia/Tokyo"
