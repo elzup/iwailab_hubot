@@ -2,9 +2,9 @@
 
 module.exports = (hubot) ->
   new cronJob
-    cronTime: '00 00 14 * * 3,5'
+    cronTime: '00 00 13 * * 5'
     onTick: ->
-      hubot.send { room: "general" }, "そろそろミーティングだよ:cps:"
+      hubot.send { room: "meeting" }, "そろそろミーティングだよ:cps:"
       return
     start: true
     timeZone: "Asia/Tokyo"
@@ -12,7 +12,7 @@ module.exports = (hubot) ->
   new cronJob
     cronTime: '00 30 22 * * *'
     onTick: ->
-      hubot.send { room: "general" }, "警備で〜す残留者の確認に来ましたー:cps:"
+      hubot.send { room: "random" }, "警備で〜す残留者の確認に来ましたー:cps:"
       return
     start: true
     timeZone: "Asia/Tokyo"
